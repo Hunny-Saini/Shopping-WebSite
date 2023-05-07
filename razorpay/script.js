@@ -1,6 +1,6 @@
 //function for payment
 if(!localStorage.getItem("cart")){
-  window.location.href = "./cart/index.html";
+  window.location.href = "../cart/index.html";
 } else{
   let cartTotal = JSON.parse(localStorage.getItem("cartTotal"));
   function pay(e){
@@ -29,5 +29,5 @@ if(!localStorage.getItem("cart")){
 document.getElementById("gotohome").addEventListener("click",gotoHome);
 
 function gotoHome(){
-  window.location.href = "./shop/index.html";
+  window.location.href = "../shop/index.html";
 };

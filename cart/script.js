@@ -95,5 +95,5 @@ function removeCartItem(event,id){
 let checkOutBtn = document.getElementById("checkout-btn");
 checkOutBtn.addEventListener("click",()=>{
   localStorage.setItem("cartTotal",JSON.stringify(`${cartTotal}`));
-  window.location.href ="./razorpay/index.html";
+  window.location.href ="../razorpay/index.html";
 });

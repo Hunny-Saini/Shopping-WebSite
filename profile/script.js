@@ -1,5 +1,5 @@
 if(!localStorage.getItem("currUser")){
-    window.location.href = "./login/index.html";
+    window.location.href = "../login/index.html";
 }
 
 let users = JSON.parse(localStorage.getItem("Users"));
@@ -27,7 +27,7 @@ const cNewPass = document.getElementById("cnew-pass");
 // fName.innerText = 
 
 if(!localStorage.getItem("currUser")){
-    window.location.href = "./login/index.html";
+    window.location.href = "../login/index.html";
 }
 
 //removing current user on 
@@ -35,7 +35,7 @@ logoutBtn.addEventListener("click", ()=>{
     localStorage.removeItem("currUser");
 
     //redirecting user to login page
-    window.location.href = "./login/index.html"
+    window.location.href = "../login/index.html"
 
 })
 

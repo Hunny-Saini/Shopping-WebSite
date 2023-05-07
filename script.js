@@ -4,7 +4,7 @@
 
 //if user is alredy logged in
 if(localStorage.getItem("currUser")){
-    window.location.href = "../shop/index.html";
+    window.location.href = "./shop/index.html";
 }
 
 const loginBtn = document.getElementById("login-btn");

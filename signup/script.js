@@ -1,6 +1,6 @@
 //if currUser is there the redirect to homepage
 if(localStorage.getItem("currUser")){
-    window.location.href ="./shop/index.html";
+    window.location.href ="../shop/index.html";
 };
 
 //users array -> To store users
@@ -71,5 +71,5 @@ function signupUser(event){
     localStorage.setItem("Users",JSON.stringify(users));
 
     //redirecting to login page after sucessful signup
-    window.location.href = "./login/index.html";
+    window.location.href = "../login/index.html";
 };

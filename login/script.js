@@ -1,6 +1,6 @@
 //if currUser is there the redirect to homepage
 if(localStorage.getItem("currUser")){
-    window.location.href ="./shop/index.html";
+    window.location.href ="../shop/index.html";
 }
 
 
@@ -47,7 +47,7 @@ function login(event){
             document.querySelector(".incorrect-pass").style.display = "none";
 
             //redirecting to shop page
-            window.location.href = "./shop/index.html"
+            window.location.href = "../shop/index.html"
             return;
         }
     }

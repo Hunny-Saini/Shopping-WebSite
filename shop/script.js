@@ -1,6 +1,6 @@
 //cehcking if user is logged in or not 
 if(!localStorage.getItem("currUser")){
-  window.location.href = "./index.html";
+  window.location.href = "../index.html";
 }
 
 
