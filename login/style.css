@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+  
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+nav .nav-items a {
+    margin: 0 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.main-conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+form button{
+    max-width: 120px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.incorrect-pass{
+    color: red;
+    display: none;
+}
+
+.signup-err{
+    color: red;
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+}
