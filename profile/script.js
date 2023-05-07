@@ -103,4 +103,6 @@ changePassForm.addEventListener("submit",(event)=>{
     localStorage.setItem("currUser",JSON.stringify(currUser));
     
     document.querySelector(".pass-changed").style.display = "block";
+    document.querySelector(".err-old").style.display = "none";
+    document.querySelector(".newpass-mismatch").style.display = "none";
 });
