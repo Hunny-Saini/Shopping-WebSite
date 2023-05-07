@@ -8,7 +8,7 @@ let cartT = true;
 
 //checking if user is logged in or not
 if(!localStorage.getItem("currUser")){
-  window.location.href ="./index.html"
+  window.location.href ="../index.html"
 }
 
 //cehcking if cart item is empty then showing empty message
