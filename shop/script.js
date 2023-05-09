@@ -4,7 +4,8 @@ if(!localStorage.getItem("currUser")){
 }
 
 
-const products = JSON.parse(localStorage.getItem("products"));
+let products;
+
 //if products array is not present then call the API
 if(!localStorage.getItem("products")){
   fetch("https://fakestoreapi.com/products")
@@ -13,9 +14,11 @@ if(!localStorage.getItem("products")){
     console.log(data);
     //setting json in local storage
     localStorage.setItem("products",JSON.stringify(data));
+    products = data;
     showData(data);
   })
 } else{
+  products = JSON.parse(localStorage.getItem("products"));
   showData(products);
 }
 
@@ -219,6 +222,7 @@ let range100_or = false;
 
 function filterCat(){
   if(categorySelected == "all") return filterSearch(products);
+  console.log(products);
   let filterByCat = products.filter((i)=>{
     if(i.category == categorySelected) return true;
     return false;
