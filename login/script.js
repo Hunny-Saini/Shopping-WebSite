@@ -64,3 +64,12 @@ function genAccessToken(length) {
     }
     return result;
 }
+
+function openMenu() {
+    var menuBtn = document.getElementById("nav-links");
+    if (menuBtn.style.display === "block") {
+      menuBtn.style.display = "none";
+    } else {
+      menuBtn.style.display = "block";
+    }
+  }

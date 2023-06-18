@@ -17,3 +17,12 @@ loginBtn.addEventListener("click", ()=>{
 signupBtn.addEventListener("click",()=>{
     window.location.href ="./signup/index.html"
 });
+
+function openMenu() {
+    var menuBtn = document.getElementById("nav-links");
+    if (menuBtn.style.display === "block") {
+      menuBtn.style.display = "none";
+    } else {
+      menuBtn.style.display = "block";
+    }
+  }

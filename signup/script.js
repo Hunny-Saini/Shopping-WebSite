@@ -73,3 +73,12 @@ function signupUser(event){
     //redirecting to login page after sucessful signup
     window.location.href = "../login/index.html";
 };
+
+function openMenu() {
+    var menuBtn = document.getElementById("nav-links");
+    if (menuBtn.style.display === "block") {
+      menuBtn.style.display = "none";
+    } else {
+      menuBtn.style.display = "block";
+    }
+  }

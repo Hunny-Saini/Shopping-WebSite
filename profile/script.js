@@ -106,3 +106,12 @@ changePassForm.addEventListener("submit",(event)=>{
     document.querySelector(".err-old").style.display = "none";
     document.querySelector(".newpass-mismatch").style.display = "none";
 });
+
+function openMenu() {
+    var menuBtn = document.getElementById("nav-links");
+    if (menuBtn.style.display === "block") {
+      menuBtn.style.display = "none";
+    } else {
+      menuBtn.style.display = "block";
+    }
+  }

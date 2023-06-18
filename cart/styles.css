@@ -201,6 +201,38 @@ aside button{
     align-items: center;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+.nav-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.mobile-nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-links {
+    display: block;
+    position: absolute;
+    display: none;
+    width: 100vw;
+    background-color: black;
+    top: 60px;
+    right: 0;
+}
+
+
+
 @media only screen and (max-width: 936px){
 
     .main-content{
@@ -224,6 +256,21 @@ aside button{
         width: 46%;
     }
 
+}
+
+@media only screen and (max-width: 576px) {
+
+    .nav-items {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-btn i {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 531px){

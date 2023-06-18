@@ -1,10 +1,10 @@
 /* Write styles here */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,15 +12,14 @@ body {
     overflow-x: hidden;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     position: sticky;
-    z-index: 100;
+    z-index: 1000;
     top: 0;
-  
     background-color: black;
     border-bottom: 1px solid white;
     padding: 1rem;
@@ -31,7 +30,7 @@ nav .brand {
     font-size: 1.5rem;
     font-weight: bold;
 }
-  
+
 nav .nav-items a {
     margin: 0 1rem;
 }
@@ -40,9 +39,9 @@ a {
     color: white;
     text-decoration: none;
 }
-  
+
 /* body styles */
-.main-conatiner{
+.main-conatiner {
     display: flex;
     flex-flow: column;
     gap: 1rem;
@@ -50,7 +49,7 @@ a {
     position: relative;
 }
 
-.content{
+.content {
     display: flex;
     flex-flow: column;
     gap: 1rem;
@@ -61,20 +60,20 @@ a {
     border: 1px solid black;
     width: 20%;
 }
-  
+
 .item img {
     max-width: 100%;
 }
-  
+
 .item .row {
     display: flex;
     justify-content: space-between;
 }
-  
+
 .item .info {
     padding: 0.5rem;
 }
-  
+
 .item button {
     width: 100%;
     border-radius: none;
@@ -85,16 +84,16 @@ a {
     background-color: black;
     cursor: pointer;
 }
-  
+
 .item .colors {
     display: flex;
     margin: 0.5rem 0;
 }
 
-.item .colors .row{
+.item .colors .row {
     margin-left: 0.5rem;
 }
-  
+
 .item .circle {
     width: 20px;
     height: 20px;
@@ -107,18 +106,18 @@ a {
     margin: 0.5rem 0;
 }
 
-.item .ratings .row{
+.item .ratings .row {
     margin-left: 0.75rem;
     display: flex;
     gap: 0.25rem;
 }
 
-.heading{
+.heading {
     font-weight: 400;
     font-size: 40px;
 }
 
-.login{
+.login {
     background-color: black;
     color: white;
     width: 120px;
@@ -127,7 +126,7 @@ a {
     cursor: pointer;
 }
 
-.signup{
+.signup {
     background-color: white;
     width: 120px;
     height: 32px;
@@ -135,46 +134,76 @@ a {
     cursor: pointer;
 }
 
-.bg-img{
+.bg-img {
     position: absolute;
     width: 800px;
     right: 0;
     top: 55px;
 }
 
-@media only screen and (max-width: 1250px){
+.mobile-nav {
+    display: none;
+}
 
-    .bg-img{
+.nav-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.mobile-nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-links {
+    display: block;
+    position: absolute;
+    display: none;
+    width: 100vw;
+    background-color: black;
+    top: 60px;
+    right: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .bg-img {
         width: 600px;
         top: 135px;
     }
 }
 
-@media only screen and (max-width: 853px){
+@media only screen and (max-width: 853px) {
 
-    .bg-img{
+    .bg-img {
         width: 500px;
         top: 150px;
     }
 
-    .item{
+    .item {
         width: 27%;
-        z-index: 1000;
+        z-index: 100;
     }
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 680px) {
 
-    nav{
+    nav {
         font-size: 12px;
 
     }
 
-    nav .nav-items a{
+    nav .nav-items a {
         margin: 0 0.5rem;
     }
 
-    .bg-img{
+    .bg-img {
         width: 362px;
         top: 202px;
         left: -7px;
@@ -182,22 +211,36 @@ a {
         top: 0;
         align-self: center;
     }
-    
 
-    .item{
+
+    .item {
         display: flex;
         flex-direction: column;
         width: 50%;
-        /* margin-top: 34vh; */
         align-self: center;
         overflow: hidden;
     }
 
-    .item .info{
+    .item .info {
         padding: 0 0.5rem;
     }
 
-    .item .colors{
+    .item .colors {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .nav-items {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-btn i {
+        font-size: 1.5rem;
     }
 }

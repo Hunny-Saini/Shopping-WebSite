@@ -97,3 +97,12 @@ checkOutBtn.addEventListener("click",()=>{
   localStorage.setItem("cartTotal",JSON.stringify(`${cartTotal}`));
   window.location.href ="../razorpay/index.html";
 });
+
+function openMenu() {
+  var menuBtn = document.getElementById("nav-links");
+  if (menuBtn.style.display === "block") {
+    menuBtn.style.display = "none";
+  } else {
+    menuBtn.style.display = "block";
+  }
+}
